@@ -1,0 +1,26 @@
+button {
+    margin: 10px;
+    font-family: 'Dokdo', cursive;
+    background-color: rgba(0, 128, 0, 0.83);
+    border: none;
+    border-radius: 5px;
+    padding: 4px;
+}
+html {
+    font-family: 'Dokdo', cursive;
+}
+#add-to-do {
+    margin: 10px;
+    font-family: 'Dokdo', cursive;
+    background-color: rgba(0, 128, 0, 0.83);
+    border: none;
+    border-radius: 5px;
+    padding: 4px;
+}
+#search {
+    border-color: green;
+    border-radius: 5px;
+}
+hr {
+    border-top: 4px solid rgba(0, 128, 0, 0.782);
+}
