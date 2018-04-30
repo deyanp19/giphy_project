@@ -14,9 +14,9 @@ $("button").on("click", function() {
 
 var gifContent =$(this).attr("topics-Name")
 //javascript, jQuery
-var queryURL = $.get("http://api.giphy.com/v1/gifs/search?q=" + gifContent + "&api_key=GmZqHjeK15F7FZADmseIJAqZ0GvgcRSR&limit=10");
+var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + gifContent + "&api_key=GmZqHjeK15F7FZADmseIJAqZ0GvgcRSR&limit=10";
 
-queryURL.done(function(data) { console.log("success got data", data); });
+// queryURL.done(function(data) { console.log("success got data", data); });
 $.ajax({
     url: queryURL,
     method: "GET"
@@ -26,6 +26,7 @@ $.ajax({
       console.log(response);
  
 var results = response.data; // this is the array in the object data
+console.log(results);
 //createa for loop to check the results
 for (var i = 0; i < results.length; i++) {
     // creating the storage for the images in div's
